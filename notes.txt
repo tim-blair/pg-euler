@@ -1,0 +1,5 @@
+To start postgres with a password of 'fake'
+docker run --name test-postgres -e POSTGRES_PASSWORD=fake -d postgres
+
+Connect to it from psql:
+docker run -it --rm --link test-postgres:postgres postgres psql -h postgres -U postgres

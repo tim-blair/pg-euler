@@ -1,0 +1,3 @@
+-- project euler is a math site, after all...
+SELECT 16*17*19*9*5*7*11*13;
+
